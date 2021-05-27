@@ -1,0 +1,539 @@
+:root{
+	--color1: rgba(137, 252, 7, 0.945);
+	--color2: rgba(23,180,83,.0788);
+	--color3: rgba(11,194,211,0.623);
+	--fondo: #f2f2f2;
+	--titulos: 33px;
+	--margenes: 60px;
+	--espacios: 10px;
+	--espacios2: 25px;
+	--espacios-contenido:45px;
+}
+
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	background: var(--fondo);
+}
+
+img{
+	vertical-align: top;
+}
+
+p{
+	--color:var(--color2);
+
+}
+
+
+
+/* CSS del Preloader*/
+
+
+.hidden{
+	overflow: hidden;
+}
+
+.centrado{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background: #000;
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.lds-default {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-default div {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  border-radius: 50%;
+  animation: lds-default 1.2s linear infinite;
+}
+.lds-default div:nth-child(1) {
+  animation-delay: 0s;
+  top: 29px;
+  left: 53px;
+}
+.lds-default div:nth-child(2) {
+  animation-delay: -0.1s;
+  top: 18px;
+  left: 50px;
+}
+.lds-default div:nth-child(3) {
+  animation-delay: -0.2s;
+  top: 9px;
+  left: 41px;
+}
+.lds-default div:nth-child(4) {
+  animation-delay: -0.3s;
+  top: 6px;
+  left: 29px;
+}
+.lds-default div:nth-child(5) {
+  animation-delay: -0.4s;
+  top: 9px;
+  left: 18px;
+}
+.lds-default div:nth-child(6) {
+  animation-delay: -0.5s;
+  top: 18px;
+  left: 9px;
+}
+.lds-default div:nth-child(7) {
+  animation-delay: -0.6s;
+  top: 29px;
+  left: 6px;
+}
+.lds-default div:nth-child(8) {
+  animation-delay: -0.7s;
+  top: 41px;
+  left: 9px;
+}
+.lds-default div:nth-child(9) {
+  animation-delay: -0.8s;
+  top: 50px;
+  left: 18px;
+}
+.lds-default div:nth-child(10) {
+  animation-delay: -0.9s;
+  top: 53px;
+  left: 29px;
+}
+.lds-default div:nth-child(11) {
+  animation-delay: -1s;
+  top: 50px;
+  left: 41px;
+}
+.lds-default div:nth-child(12) {
+  animation-delay: -1.1s;
+  top: 41px;
+  left: 50px;
+}
+@keyframes lds-default {
+  0%, 20%, 80%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
+
+
+/* termina el CSS de PRELOADER*/
+
+header{
+	width: 100%;
+	height: 600px;
+	background: linear-gradient(to bottom, 
+rgba(30, 182, 75, 0.6),
+rgba(157, 250, 81, 0.6),
+rgba(254, 255, 255, 0.45)
+		 ), url(img/Hojas\ Naturalesa.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+
+}
+
+nav{
+	width: 100%;
+	position: fixed;
+	box-shadow: 0 0 10px 0 transparent;
+}
+
+.nav1{
+	background: transparent;
+	height: 80px;
+	color: #fff;
+
+}
+
+.nav2{
+	background: var(--fondo);
+	height: 100px;
+	color: #000;
+}
+
+.contenedor-nav{
+	display: flex;
+	margin: auto;
+	width: 90%;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1000px;
+	height: inherit;
+	overflow: hidden;  
+}
+
+nav .enlaces a{
+	display: inline-block;
+	padding: 5px 0;
+	margin-right: 17px;
+	font-size: 17px;
+	font-weight: 300;
+	text-decoration: none;
+	border-bottom: 3px solid transparent;
+	color: inherit;
+}
+
+nav .enlaces a:hover{
+	border-bottom: 3px solid #085302;
+	transition: 0.6s ;
+}
+
+.logo,  .logo img{
+	height: 80px;
+}
+
+.icono{
+	display: none;
+	font-size: 24px;
+	padding: 23.5px 20px;
+}
+
+.textos{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center; 
+	color: #fff;
+	overflow: hidden;
+	text-align: center;
+}
+
+.textos>h1{
+	font-size: 80px;
+}
+
+.textos>h2{
+	font-size: 30px;
+	font-weight: 300;
+}
+
+.textos>h3{
+	font-size: 30px;
+	font-weight: 300;
+}
+
+/*Main*/
+
+.contenedor{
+	margin:auto;
+	padding: var(--margenes) 0; 
+	width: 90%;
+	max-width: 1000px;
+	text-align: center;
+	overflow: hidden;
+
+}
+.contenedor2{
+	margin:auto;
+	padding: var(--margenes) 0; 
+	width: 90%;
+	max-width: 1000px;
+	text-align: center;
+	overflow: hidden;
+
+}
+
+
+.contenedor h3{
+	font-size:  var(--titulos);
+	color: var(--color1);
+	margin-bottom: var(--espacios);
+
+}
+
+.contenedor p{
+	font-size: var(--subtitulos);
+	font-weight: 300;
+	color: var(--color1);	
+}
+
+.contenedor2 p {
+	font-size: var(--subtitulos);
+	font-weight: 300;
+	color: black;	
+}
+
+.after::after {
+	content:'';
+	display: block;
+	margin: auto;
+	margin-top: var(--espacios);
+	width: 100px;
+	height: 2px;
+	background: var(--color1);
+	margin-bottom: var(--espacios-contenido);
+}
+
+.card{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.content-card{
+	width: 31%;
+	box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+	overflow: hidden;
+	height: 400px;
+}
+
+
+
+.people{
+	height: 80%;	
+}
+
+.content-card img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/*equipo*/
+
+.texto-team{
+	height: 20%;
+	width: 100%;
+	padding: var(--espacios);
+}
+
+.about{
+	background: url(img/Maceta.jpg);
+	background-position: center;
+	 
+}
+
+.servicios{
+	display: flex;
+	color: #fff;
+	justify-content: space-between;
+	margin: auto;
+	flex-wrap: wrap;
+}
+
+/*servicios*/
+
+.caja-servicios>h4{
+	margin-bottom: var(--espacios);
+}
+
+.caja-servicios>p{
+	text-align: center;
+}
+
+/*leyendas*/
+
+.botones-legend{
+	overflow: hidden;
+
+}
+
+.botones-legend li{
+	display: inline-block;
+	text-align: center;
+	margin-left: var(--espacios);
+	 margin-bottom: var(--espacios-contenido);
+	 padding: 6px 12px; 
+	 border: 1px solid var(--color1);
+	 list-style: none;
+	 color:var(--color1);
+}
+
+
+.botones-legend li:hover{
+	background: var(--color1);
+	color:#fff;
+	cursor:pointer;
+}
+
+.botones-legend .active{
+	background: var(--color1);
+	color: #fff;
+}
+
+.galeria-legend{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.galeria-legend .cont-legend{
+	width: 31%;
+	box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+	overflow: hidden;
+	height: 300px;
+	margin-bottom: var(--espacios-contenido);
+}
+
+.img-legend{
+	height: 90%;
+	width: 100%;
+
+}
+
+.img-legend img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.textos-legend{
+	height: 10%;
+}
+
+.textos-legend h4{
+	line-height: 30px;
+	font-weight: 300;
+}
+
+
+
+
+/* footer*/
+
+footer{
+	background: url(img/Maceta.jpg);
+	
+}
+
+.marca-logo{
+	width: 40%;
+	margin: auto;
+	margin-bottom: var(--espacios);
+}
+
+.marca-logo img{
+	width: 25%;
+	margin-bottom: var(--espacios2);
+
+}
+
+
+.iconos{
+	display: flex;
+	margin: auto;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.fab{
+	font-size: 60px;
+	color: #fff;
+	margin-bottom: var(--espacios);
+	display: inline-block;
+}
+
+.fas{
+	font-size: 60px;
+	color: #fff;
+	margin-bottom: var(--espacios);
+	display: inline-block;
+}
+
+footer p{
+	margin-top: var(--espacios);
+}
+
+
+@media screen and (max-width: 700px) {
+	.nav2{
+		color: #fff;
+	}
+
+	.icono{
+		display: block;
+		cursor: pointer;
+	}
+
+	.enlaces{
+		position: fixed;
+		top: 80px;
+		background: #2c3e50;
+		left: 0;
+		height: 100%;
+		transition: 1s;
+		width: 0;
+		overflow: hidden;
+	}
+	
+	.enlaces a{
+		display: block;
+		width: 100%;
+		height: 50px;
+		padding: 20px;
+		text-align: center;
+		background: #34495e;
+		color: #fff;
+	}
+
+
+	.textos>h1{
+		font-size: 70px;
+	}
+
+	.textos>h2{
+		font-size: 35px;
+	}
+
+	.content-card{
+		width: 48%;
+		margin-bottom: var(--margenes);
+	}
+
+	:root{
+		--margenes:30px;
+	}
+
+
+
+}
+
+
+@media screen and (max-width: 500px){
+	
+	:root{
+		--espacios-contenido: 25px;
+	}
+
+	.content-card{
+		 width: 90%;
+	}
+
+	.caja-servicios{
+		width: 90%;
+		margin-bottom: var(--margenes);
+	}
+
+	.cont-legend{
+		width: 85%;
+	}
+
+	.marca-logo{
+		width: 80%;
+	}
+
+	.iconos{
+		margin: auto;
+	}
+}
